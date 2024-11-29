@@ -34,7 +34,8 @@ index = [
 
 st.title("Plant Disease Classifier")
 
-st.write("Upload an image of a plant leaf to classify its health status.")
+# Use markdown to make the text h5
+st.markdown("<h5>Upload an image of a plant leaf to classify its health status.</h5>", unsafe_allow_html=True)
 
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "png", "jpeg"])
 
@@ -50,5 +51,4 @@ if uploaded_file is not None:
     preds = np.argmax(y, axis=1)
 
     result_text = "The classified plant species is: " + str(index[preds[0]])
-    st.write(result_text)
-
+    st.markdown(f"<h3 style='text-align: center; color: black;'>{result_text}</h3>", unsafe_allow_html=True)
