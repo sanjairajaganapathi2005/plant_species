@@ -32,10 +32,10 @@ index = [
     "Pongamia Pinnata healthy"
 ]
 
-st.title("Plant Disease Classifier")
+st.title("Plant Species Classifier")
 
 # Use markdown to make the text h5
-st.markdown("<h5>Upload an image of a plant leaf to classify its health status.</h5>", unsafe_allow_html=True)
+st.markdown("<h5>Upload an image of a plant leaf to classify its Species.</h5>", unsafe_allow_html=True)
 
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "png", "jpeg"])
 
